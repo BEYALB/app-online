@@ -8,6 +8,7 @@
 
 body{
      font-family: "Bebas Neue", sans-serif;
+     
 }
 .toolbar{
     height: 80px;
@@ -103,3 +104,69 @@ body{
     font-weight: 600;
     text-decoration: none;
  }
+
+ form{
+   position: relative;
+    padding-top: 10px;
+    background-color: var(--branco);
+    padding-bottom: 20px;
+ }
+ input[type="text"]{
+    width: 90%;
+    background:var(--gelo);
+    height: 45px;
+    border-radius: 10px;
+    margin: auto;
+    padding: 10px 20px ;
+    
+ }
+
+ ::placeholder{
+    color:#b3afaf;
+ }
+
+ .icone-busca{
+    position: absolute;
+    top: 0px;
+    right: 5%;
+    font-size: 25px;
+    padding: 15px;
+    
+
+
+ }
+
+ .page-content{
+    background-color: var(--branco);
+ }
+
+ .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .img-fluid{
+       max-width: 100%;
+    }
+    .block{
+        /* border: 2px solid red; */
+        margin-left: 5%;
+        margin-right: 5%;
+        /* margin-top: 0; */
+    }

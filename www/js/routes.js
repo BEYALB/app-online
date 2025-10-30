@@ -30,6 +30,42 @@ var app = new Framework7({
 		},
 		pageInit: function (event, page) {
 		// fazer algo quando a página for inicializada
+      $.getScript('js/index.js');
+      // crie um js para colocar codigo 
+      // codigo do framework
+      var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      delay:3000,
+      autoplay:true,
+      loop:true,
+       breakpoints:{
+        50:{
+          slidesPerView: 1,
+          spaceBetween: 30,
+        },
+        640:{
+          slidesPerView: 2,
+          spaceBetween: 30,
+
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+        
+
+
+
+      }
+
+      // freeMode: true, ele permite arrastar as imagens muito rapiido
+      // pagination: {// para fazer as bolinhas
+      //   el: ".swiper-pagination",
+      //   clickable: true,
+      // },
+    });
+
 		},
 		pageBeforeRemove: function (event, page) {
 		// fazer algo antes da página ser removida do DOM
